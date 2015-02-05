@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_grey"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.twinly.eyebb.customview.LinearLayoutForListView
+            android:id="@+id/listView_authorization_from_others"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </com.twinly.eyebb.customview.LinearLayoutForListView>
+    </ScrollView>
+<!-- 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:text="@string/text_no_guest"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/view_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/liner_g_to_m"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_home_green01"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="28dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_authorized_to_others"
+                        style="@style/WhiteText_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:text="@string/text_authorized_to_others" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/ic_home_no_bg"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="8dp" >
+
+                        <TextView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginRight="2dp"
+                            android:background="@drawable/btn_actbar_profile_on" />
+
+                        <TextView
+                            android:id="@+id/auth_to_children_num"
+                            style="@style/WhiteText_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="0" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <GridView
+                    android:id="@+id/auth_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="6dp"
+                    android:numColumns="2"
+                    android:padding="6dp"
+                    android:scrollbars="none"
+                    android:verticalSpacing="6dp" >
+                </GridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liner_m_to_g"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_home_blue01"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="28dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_authorized_from_others"
+                        style="@style/WhiteText_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:text="@string/text_authorization_from_others" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/ic_home_no_bg"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="8dp" >
+
+                        <TextView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginRight="2dp"
+                            android:background="@drawable/btn_actbar_profile_on" />
+
+                        <TextView
+                            android:id="@+id/auth_from_children_num"
+                            style="@style/WhiteText_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="0" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/text_authorization_from_others" />
+
+                <TextView
+                    android:id="@+id/tv_hint_authorization_from_others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/text_no_guest"
+                    android:visibility="gone" />
+
+                <GridView
+                    android:id="@+id/auth_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="6dp"
+                    android:numColumns="2"
+                    android:padding="6dp"
+                    android:scrollbars="none"
+                    android:verticalSpacing="6dp" >
+                </GridView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+ -->
+</LinearLayout>

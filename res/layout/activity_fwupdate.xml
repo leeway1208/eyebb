@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:text="cur_image" />
+
+        <TextView
+            android:id="@+id/tw_target"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:text="no_image" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:text="new_image" />
+
+        <TextView
+            android:id="@+id/tw_file"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:gravity="left"
+            android:text="no_image_sel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <Button
+            android:id="@+id/btn_load_a"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="onLoad"
+            android:text="load_image_a" />
+
+        <Button
+            android:id="@+id/btn_load_b"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:onClick="onLoad"
+            android:text="load_image_b" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tw_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="0"
+        android:gravity="center_horizontal"
+        android:text="idle"
+        android:textSize="14sp" />
+
+    <ProgressBar
+        android:id="@+id/pb_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:maxHeight="15dip"
+        android:minHeight="15dip"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/tw_log"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:lines="10"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="0"
+        android:onClick="onStart"
+        android:text="start_prog" />
+
+</LinearLayout>

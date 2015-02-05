@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.twinly.eyebb.customview.PullToRefreshListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:listSelector="@drawable/list_selector"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+    </com.twinly.eyebb.customview.PullToRefreshListView>
+
+    <TextView
+        android:id="@+id/list_is_null"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        style="@style/DarkGreyText_18"
+        android:text="@string/text_no_content" >
+    </TextView>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionMenuTextAppearance">@style/MyActionMenuStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/btn_actbar_back</item>
+        <!-- <item name="android:fontFamily">sans-serif-light</item> -->
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/actionbar_background</item>
+    </style>
+
+    <style name="MyActionMenuStyle" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">?android:attr/actionMenuTextColor</item>
+    </style>
+
+    <style name="Theme.SelectDate" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:editTextStyle">@style/Widget.EditText.Black</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- 模糊 -->
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Widget.EditText.Black" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

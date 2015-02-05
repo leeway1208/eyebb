@@ -1,0 +1,312 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.twinly.eyebb"
+    android:versionCode="5"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="20" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+
+    <!-- use for bluetooth -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- CAMERA -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- phone call -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- VIBRATE -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- language -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!-- internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!--
+     Creates a custom permission so only this app can receive its messages.
+
+     NOTE: the permission *must* be called PACKAGE.permission.C2D_MESSAGE,
+           where PACKAGE is the application's package name.
+    -->
+    <permission
+        android:name="com.twinly.eyebb.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.twinly.eyebb.permission.C2D_MESSAGE" />
+
+    <!--
+     The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Maps API needs OpenGL ES 2.0. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="locale"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCgpafiP-1AYoJoohoOfzzQqmEa7ofp7W4" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.twinly.eyebb.activity.LancherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.ChildInformationMatchingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.SearchGuestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.UpdateNicknameActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.MyKidsListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.UpdatePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.ForgetPasswordDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleActivity" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.OldPasswordIncorrectDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleActivity" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.RequireQrCodeDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleActivity" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.SignUpAskToBindDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleActivity" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.UnbindDeviceDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleActivity" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.CheckChildToBindDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleActivity" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.AuthorizeKidsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.dialog.ChildDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleActivity" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.dialog.FeedbackDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleActivity" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.GrantKidsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.ChildBirthdayDialog"
+            android:label="Date Selection"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SelectDate" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.RefreshTimeDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.SchoolBusTrackingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.example.qr_codescan.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.example.qr_codescan.ManualInputActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.KindergartenListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.KidsListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.ChangeKidsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.KidProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.FwUpdateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.BindingChildMacaronActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.Test"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.dialog.IndoorLocatorOptionsDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleActivity" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.dialog.KidsListOptionsDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleActivity" >
+        </activity>
+        <activity
+            android:name="com.twinly.eyebb.activity.SelectKidsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+        </activity>
+
+        <receiver
+            android:name="com.twinly.eyebb.service.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <category android:name="com.twinly.eyebb" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.twinly.eyebb.service.GcmIntentService" />
+        <service
+            android:name="com.twinly.eyebb.bluetooth.BluetoothLeService"
+            android:enabled="true" />
+        <service
+            android:name="com.twinly.eyebb.bluetooth.AntiLostService"
+            android:exported="true"
+            android:process=":remote" />
+    </application>
+
+</manifest>

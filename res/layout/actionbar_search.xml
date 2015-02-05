@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WhiteText_18"
+    android:id="@+id/search_addr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/btn_search"
+    android:imeOptions="actionSearch"
+    android:inputType="text"
+    android:textColorHint="@color/white" >
+
+    <requestFocus />
+
+</EditText>
+

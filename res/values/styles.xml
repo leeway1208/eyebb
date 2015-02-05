@@ -1,0 +1,227 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+
+    </style>
+
+    <style name="WhiteText_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="WhiteText_15">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="WhiteText_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="WhiteText_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="WhiteText_24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="RedText_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="RedText_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="RedText_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="RedText_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="RedText_26">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="RedText_32">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="DarkGreyText_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="DarkGreyText_15">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="DarkGreyText_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="DarkGreyText_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="DarkGreyText_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="DarkGreyText_alpha50_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:alpha">0.5</item>
+    </style>
+
+    <style name="DarkGreyText_28">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="LightGreyText_15">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="LightGreyText_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="BlackText_15">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="BlackText_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="BlackText_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="BlackText_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="MyDialogStyleActivity" parent="@android:style/Theme.Holo.DialogWhenLarge">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- 模糊 -->
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <!-- 自定义loading dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="GNowProgressBar" parent="SmoothProgressBar">
+        <item name="spb_stroke_separator_length">0dp</item>
+        <item name="spb_sections_count">2</item>
+        <item name="spb_speed">1.7</item>
+        <item name="spb_progressiveStart_speed">2</item>
+        <item name="spb_progressiveStop_speed">3.4</item>
+        <item name="spb_interpolator">spb_interpolator_acceleratedecelerate</item>
+        <item name="spb_mirror_mode">true</item>
+        <item name="spb_reversed">true</item>
+        <item name="spb_colors">@array/gplus_colors</item>
+        <item name="spb_progressiveStart_activated">true</item>
+        <item name="spb_generate_background_with_colors">false</item>
+    </style>
+
+    <style name="CircularProgressBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="stroke_width">5dp</item>
+        <item name="progress" format="float">0.1</item>
+        <item name="progress_color">#ffff4444</item>
+        <item name="progress_background_color">#ffffffff</item>
+        <item name="marker_visible">true</item>
+        <item name="thumb_visible">true</item>
+    </style>
+
+    <style name="CircularProgressBarLight">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="stroke_width">5dp</item>
+        <item name="progress" format="float">0.1</item>
+        <item name="progress_color">#ffff4444</item>
+        <item name="progress_background_color">#aaa</item>
+        <item name="marker_visible">true</item>
+        <item name="thumb_visible">true</item>
+    </style>
+
+</resources>

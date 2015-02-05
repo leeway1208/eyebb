@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_grey"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp" >
+
+    <!-- name -->
+
+    <TextView
+        style="@style/RedText_16"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:text="@string/text_fill_kid_name" />
+
+    <LinearLayout
+        android:id="@+id/child_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ic_child_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/ic_login_name" />
+
+        <EditText
+            android:id="@+id/ed_username"
+            style="@style/DarkGreyText_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:hint="@string/text_kid_name"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:longClickable="false"
+            android:maxLength="30"
+            android:singleLine="true" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_red" >
+    </LinearLayout>
+
+    <!-- birthday -->
+
+    <TextView
+        style="@style/RedText_16"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_select_kid_birthday" />
+
+    <LinearLayout
+        android:id="@+id/child_birthday_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ic_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/ic_login_bday" />
+
+        <TextView
+            android:id="@+id/birthday"
+            style="@style/DarkGreyText_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:hint="@string/text_kid_birthday"
+            android:maxLength="30"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_red" >
+    </LinearLayout>
+
+    <!-- kindergarten -->
+
+    <TextView
+        style="@style/RedText_16"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_select_kid_kindergarten" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <RelativeLayout
+            android:id="@+id/kindergartenItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="6dp" >
+
+            <ImageView
+                android:id="@+id/ic_kindergarten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_cross"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/kindergarten"
+                style="@style/DarkGreyText_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/ic_kindergarten"
+                android:background="@color/transparent"
+                android:text="@string/text_select_kid_kindergarten" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_arrow_go" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_red" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/WhiteText_18"
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_bg_red"
+        android:onClick="OnLoginClicked"
+        android:text="@string/btn_search_child" />
+
+</LinearLayout>

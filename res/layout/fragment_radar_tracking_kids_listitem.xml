@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 1.android:descendantFocusability：ViewGroup阻止其子View接收焦点 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/newslist_item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="64.0dip"
+    android:background="@drawable/bg_white"
+    android:descendantFocusability="blocksDescendants"
+    android:marqueeRepeatLimit="marquee_forever" >
+
+    <RelativeLayout
+        android:id="@+id/newslist_item_info_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp" >
+
+        <com.twinly.eyebb.customview.CircleImageView
+            android:id="@+id/radar_child_head_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/icon_avatar_dark"
+            app:border_color="@color/dark_grey"
+            app:border_width="2dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/newslist_kids_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/newslist_item_info_layout" >
+
+        <TextView
+            android:id="@+id/radar_list_kids_missd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/btn_missed"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/radar_list_kids_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radar_list_kids_missd"
+            android:text="Kitty Chan"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/radar_list_kids_device_rssi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radar_list_kids_name"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/radar_item_beep_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/btn_bg_red"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_funcbar_beep" />
+
+        <TextView
+            style="@style/WhiteText_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="@string/text_beep" >
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/device_connect_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dp"
+        android:layout_toLeftOf="@id/radar_item_beep_btn" />
+
+</RelativeLayout>

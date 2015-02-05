@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp" >
+
+    <!-- guest to master -->
+
+    <LinearLayout
+        android:id="@+id/view_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/liner_g_to_m"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_home_green01"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="28dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_authorized_to_others"
+                    style="@style/WhiteText_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/text_authorized_to_others" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/ic_home_no_bg"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="8dp" >
+
+                    <TextView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/btn_actbar_profile_on" />
+
+                    <TextView
+                        android:id="@+id/auth_to_children_num"
+                        style="@style/WhiteText_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="0" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.twinly.eyebb.customview.FlowLayout
+                android:id="@+id/avatarContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:animateLayoutChanges="false"
+                android:orientation="horizontal"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:showDividers="middle"
+                app:horizontalSpacing="8dp"
+                app:verticalSpacing="8dp" >
+            </com.twinly.eyebb.customview.FlowLayout>
+            <!--
+                         <GridView
+                        android:id="@+id/auth_to"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:horizontalSpacing="6dp"
+                        android:numColumns="2"
+                        android:padding="6dp"
+                         android:scrollbars="none"
+                         
+                        android:verticalSpacing="6dp" >
+                    </GridView>
+            -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

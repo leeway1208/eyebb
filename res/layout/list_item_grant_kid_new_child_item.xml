@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="64dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="8dp" >
+
+    <LinearLayout
+        android:id="@+id/re_layout_left"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_white"
+        android:gravity="center_vertical" >
+
+        <com.twinly.eyebb.customview.CircleImageView
+            android:id="@+id/avatar_left"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_avatar_dark"
+            app:border_color="@color/white"
+            app:border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/avatar"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/auth_nick_name_left"
+                style="@style/BlackText_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="aaaaa"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/auth_user_name_left"
+                style="@style/DarkGreyText_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:text="aaaaa" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/re_layout_right"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_white"
+        android:gravity="center_vertical" >
+
+        <com.twinly.eyebb.customview.CircleImageView
+            android:id="@+id/avatar_right"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_avatar_dark"
+            app:border_color="@color/white"
+            app:border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/avatar"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/auth_nick_name_right"
+                style="@style/BlackText_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="aaaaa"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/auth_user_name_right"
+                style="@style/DarkGreyText_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:text="aaaaa" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,214 @@
+{
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 22.3401074,
+               "lng" : 114.1826525
+            },
+            "southwest" : {
+               "lat" : 22.3339707,
+               "lng" : 114.1759087
+            }
+         },
+         "copyrights" : "地图数据 ©2014 GS(2011)6020 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.8 公里",
+                  "value" : 1776
+               },
+               "duration" : {
+                  "text" : "4 分钟",
+                  "value" : 227
+               },
+               "end_address" : "香港九龙塘九龙塘站",
+               "end_location" : {
+                  "lat" : 22.3369043,
+                  "lng" : 114.1763334
+               },
+               "start_address" : "香港九龙塘浸会大学道校园香港浸會學院",
+               "start_location" : {
+                  "lat" : 22.3340497,
+                  "lng" : 114.1826525
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "60 米",
+                        "value" : 60
+                     },
+                     "duration" : {
+                        "text" : "1 分钟",
+                        "value" : 7
+                     },
+                     "end_location" : {
+                        "lat" : 22.3339707,
+                        "lng" : 114.1820822
+                     },
+                     "html_instructions" : "从\u003cb\u003eBaptist University Road/浸會大學道\u003c/b\u003e向\u003cb\u003e西\u003c/b\u003e行驶，到\u003cb\u003eLa Salle Road/喇沙利道\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "ybigCqh|wTJf@BT?\\?T"
+                     },
+                     "start_location" : {
+                        "lat" : 22.3340497,
+                        "lng" : 114.1826525
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "52 米",
+                        "value" : 52
+                     },
+                     "duration" : {
+                        "text" : "1 分钟",
+                        "value" : 17
+                     },
+                     "end_location" : {
+                        "lat" : 22.3340325,
+                        "lng" : 114.1815783
+                     },
+                     "html_instructions" : "继续前行，上\u003cb\u003eHereford Road/禧福道\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "ibigC_e|wTCl@Gt@"
+                     },
+                     "start_location" : {
+                        "lat" : 22.3339707,
+                        "lng" : 114.1820822
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.6 公里",
+                        "value" : 594
+                     },
+                     "duration" : {
+                        "text" : "1 分钟",
+                        "value" : 70
+                     },
+                     "end_location" : {
+                        "lat" : 22.339092,
+                        "lng" : 114.181819
+                     },
+                     "html_instructions" : "从环岛的\u003cb\u003e2\u003c/b\u003e出口上\u003cb\u003eRenfrew Road/聯福道\u003c/b\u003e",
+                     "maneuver" : "roundabout-left",
+                     "polyline" : {
+                        "points" : "ubigC{a|wTB@@@@B@@@B?D?@?@ABABA@A@A@A?A@C?A?A?A?CAAACC?AUJE@E@yISiAC_BI_AGqDW}@EgCU"
+                     },
+                     "start_location" : {
+                        "lat" : 22.3340325,
+                        "lng" : 114.1815783
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 公里",
+                        "value" : 283
+                     },
+                     "duration" : {
+                        "text" : "1 分钟",
+                        "value" : 43
+                     },
+                     "end_location" : {
+                        "lat" : 22.3391689,
+                        "lng" : 114.179077
+                     },
+                     "html_instructions" : "向\u003cb\u003e左\u003c/b\u003e转，进入\u003cb\u003eJunction Road/聯合道\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "ibjgCkc|wTAr@?BAhEBt@?LA~@CTC`@Cz@Ah@"
+                     },
+                     "start_location" : {
+                        "lat" : 22.339092,
+                        "lng" : 114.181819
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "84 米",
+                        "value" : 84
+                     },
+                     "duration" : {
+                        "text" : "1 分钟",
+                        "value" : 8
+                     },
+                     "end_location" : {
+                        "lat" : 22.339925,
+                        "lng" : 114.179118
+                     },
+                     "html_instructions" : "向\u003cb\u003e右\u003c/b\u003e转，前往\u003cb\u003eCornwall Street/歌和老街\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "ybjgCgr{wTG?mCG"
+                     },
+                     "start_location" : {
+                        "lat" : 22.3391689,
+                        "lng" : 114.179077
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 公里",
+                        "value" : 331
+                     },
+                     "duration" : {
+                        "text" : "1 分钟",
+                        "value" : 30
+                     },
+                     "end_location" : {
+                        "lat" : 22.3401094,
+                        "lng" : 114.1759031
+                     },
+                     "html_instructions" : "在第 1 个路口向\u003cb\u003e左\u003c/b\u003e转，进入\u003cb\u003eCornwall Street/歌和老街\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "ogjgCor{wTI`BKrBA`A?@E~AEjB?d@AfB?N"
+                     },
+                     "start_location" : {
+                        "lat" : 22.339925,
+                        "lng" : 114.179118
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 公里",
+                        "value" : 372
+                     },
+                     "duration" : {
+                        "text" : "1 分钟",
+                        "value" : 52
+                     },
+                     "end_location" : {
+                        "lat" : 22.3369043,
+                        "lng" : 114.1763334
+                     },
+                     "html_instructions" : "向\u003cb\u003e左\u003c/b\u003e转，进入\u003cb\u003eKent Road/根德道\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "uhjgCk~zwT@AVGrGwA`B_@b@KJAH?J@`AVTF^JJBLBXB"
+                     },
+                     "start_location" : {
+                        "lat" : 22.3401094,
+                        "lng" : 114.1759031
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "ybigCqh|wTN|@?r@KbBB@FJALGHI@ICCE[L_JQiDMwL{@Av@@~FAlAGv@EdBuCGWxGKjEAlC@LjH_BdCk@TAbCl@r@J"
+         },
+         "summary" : "Renfrew Road/聯福道",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

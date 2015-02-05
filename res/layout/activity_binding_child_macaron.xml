@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_bg_white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.twinly.eyebb.customview.CircleImageView
+                android:id="@+id/avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/icon_avatar_dark"
+                app:border_color="@color/white"
+                app:border_width="2dp" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/DarkGreyText_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/ani_connecting_01" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/message"
+            style="@style/DarkGreyText_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_connecting" />
+
+        <Button
+            android:id="@+id/btn_event"
+            style="@style/WhiteText_18"
+            android:layout_width="180dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_bg_red"
+            android:text="@string/btn_cancel" />
+    </LinearLayout>
+
+</LinearLayout>

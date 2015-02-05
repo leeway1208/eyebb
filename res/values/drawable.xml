@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="actionbar_background">#FFEC4235</color>
+    <color name="activity_background_white">#FFFFFFFF</color>
+    <color name="activity_background_grey">#FFF0F0F0</color>
+    <color name="divider_red">#FFEC4235</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFEC4235</color>
+    <color name="green">#FF10B55D</color>
+    <color name="dark_grey">#FF585854</color>
+    <color name="sky_blue">#FF31b4f6</color>
+    <color name="light_grey">#FFBABABA</color>
+    <color name="progressbar_yellow">#FFFFC342</color>
+    <color name="progressbar_blue">#FF1CD7FF</color>
+    <color name="spb_default_color">#33b5e5</color>
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+    <color name="preference_item_normal">#FFFFFFFF</color>
+    <color name="preference_item_pressed">#fff2f2f2</color>
+    <color name="divider">#FFe3e3e3</color>
+    <color name="lilac_colour">#FFADADAD</color>
+
+</resources>

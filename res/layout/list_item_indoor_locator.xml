@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_home_green01"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_home_food" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/area_name"
+                style="@style/WhiteText_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_home_no_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="8dp" >
+
+                <TextView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/btn_actbar_profile_on" />
+
+                <TextView
+                    android:id="@+id/children_num"
+                    style="@style/WhiteText_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.twinly.eyebb.customview.FlowLayout
+            android:id="@+id/avatarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:animateLayoutChanges="false"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            app:verticalSpacing="8dp" >
+        </com.twinly.eyebb.customview.FlowLayout>
+    </LinearLayout>
+
+</LinearLayout>

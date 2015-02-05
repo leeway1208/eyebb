@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_grey"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <TextView
+            android:id="@+id/username"
+            style="@style/DarkGreyText_28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/options_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_settings" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/btn_activities"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/tv_activities"
+                    style="@style/RedText_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/text_notifications" />
+
+                <TextView
+                    android:id="@+id/red_divider_activities"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/red"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/black_divider_activities"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.1"
+                    android:background="@color/black" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <com.twinly.eyebb.customview.CircleImageView
+                android:id="@+id/img"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/logo_tmp"
+                app:border_color="#FF000000"
+                app:border_width="0dp" />
+
+            <RelativeLayout
+                android:id="@+id/notification_details_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/img" >
+
+                <TextView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_arrow_go_big" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/arrow"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/title"
+                        style="@style/DarkGreyText_18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="@string/text_feed_back" />
+
+                    <TextView
+                        style="@style/BlackText_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2014.11.04" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/img"
+                android:alpha="0.1"
+                android:background="@color/black" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:listSelector="@drawable/list_selector"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

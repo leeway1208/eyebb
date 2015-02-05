@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white"
+    android:padding="8dp" >
+
+    <com.twinly.eyebb.customview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/icon_avatar_dark"
+        app:border_color="@color/white"
+        app:border_width="2dp" />
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/DarkGreyText_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/avatar" />
+
+    <CheckedTextView
+        android:id="@+id/tv_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/checkable_text_selector"
+        android:checked="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

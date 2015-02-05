@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="debugDraw" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_newLine" format="boolean" />
+        <attr name="layout_horizontalSpacing" format="dimension" />
+        <attr name="layout_verticalSpacing" format="dimension" />
+    </declare-styleable>
+
+    
+    <declare-styleable name="HoloCircularProgressBar">
+        <attr name="stroke_width" format="dimension" />
+        <attr name="progress" format="float" />
+        <attr name="marker_progress" format="float" />
+        <attr name="progress_color" format="color" />
+        <attr name="progress_background_color" format="color" />
+        <attr name="thumb_visible" format="boolean" />
+        <attr name="marker_visible" format="boolean" />
+        <attr name="android:gravity" />
+    </declare-styleable>
+
+    <attr name="circularProgressBarStyle" format="reference" />
+</resources>
