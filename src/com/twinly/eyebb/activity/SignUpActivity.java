@@ -331,14 +331,14 @@ public class SignUpActivity extends Activity {
 				Toast.makeText(SignUpActivity.this,
 						R.string.text_username_is_used, Toast.LENGTH_SHORT)
 						.show();
-				tvUsername.setBackgroundResource(R.drawable.ic_cross);
+				tvUsername.setBackgroundResource(R.drawable.ic_verify_cross);
 				break;
 
 			case CHECK_ACC_ERROR:
 				Toast.makeText(SignUpActivity.this,
 						R.string.text_error_username, Toast.LENGTH_SHORT)
 						.show();
-				tvUsername.setBackgroundResource(R.drawable.ic_cross);
+				tvUsername.setBackgroundResource(R.drawable.ic_verify_cross);
 				break;
 
 			case CONNECT_ERROR:

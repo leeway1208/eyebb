@@ -28,8 +28,8 @@
 
             <TextView
                 android:id="@+id/ic_signup_phone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
                 android:layout_margin="8dp"
                 android:background="@drawable/ic_login_phone" />
 
@@ -69,8 +69,8 @@
 
             <TextView
                 android:id="@+id/ic_signup_nickname"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
                 android:layout_margin="8dp"
                 android:background="@drawable/ic_login_name" />
 
@@ -110,8 +110,8 @@
 
             <TextView
                 android:id="@+id/ic_signup_pw"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
                 android:layout_margin="8dp"
                 android:background="@drawable/ic_login_pw" />
 
@@ -157,8 +157,8 @@
 
             <TextView
                 android:id="@+id/ic_signup_email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
                 android:layout_margin="8dp"
                 android:background="@drawable/ic_login_email" />
 

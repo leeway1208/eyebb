@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.twinly.eyebb.R;
 import com.twinly.eyebb.constant.Constants;
@@ -97,7 +98,7 @@ public class RequireQrCodeDialog extends Activity {
 				System.out.println("connect error");
 
 				Message msg = handler.obtainMessage();
-				msg.what = Constants.GET_QR_CODE_FAIL;
+				msg.what = Constants.CONNECT_ERROR;
 				handler.sendMessage(msg);
 			} else {
 				if (retStr.length() > 4) {
@@ -154,6 +155,12 @@ public class RequireQrCodeDialog extends Activity {
 				imgQrCode.setBackground(getResources().getDrawable(
 						R.drawable.ic_verify_cross));
 
+				break;
+
+			case Constants.CONNECT_ERROR:
+				Toast.makeText(RequireQrCodeDialog.this,
+						getString(R.string.text_network_error),
+						Toast.LENGTH_LONG).show();
 				break;
 
 			}

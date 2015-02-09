@@ -24,6 +24,7 @@
     <string name="text_indoor_locator">Indoor Locator</string>
     <string name="text_radar_tracking">Radar Tracking</string>
     <string name="text_report">Report</string>
+    <string name="text_child_information_matching">Child Information</string>
     <string name="text_kids_list">Kids-List</string>
     <string name="text_change_kids">Change Kids</string>
     <string name="text_beep_all">Beep all</string>

@@ -563,6 +563,11 @@ public class KidProfileActivity extends Activity implements
 	@Override
 	public void onDisConnected() {
 		// do nothing
+		if (dialog != null) {
+			if (dialog.isShowing()) {
+				dialog.dismiss();
+			}
+		}
 	}
 
 	@Override

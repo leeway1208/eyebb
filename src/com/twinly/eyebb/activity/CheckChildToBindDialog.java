@@ -112,7 +112,7 @@ public class CheckChildToBindDialog extends Activity {
 	Runnable postCheckChildIsBindToServerRunnable = new Runnable() {
 		@Override
 		public void run() {
-			postCheckChildIsBindToServer();
+	 		postCheckChildIsBindToServer();
 		}
 	};
 

@@ -74,7 +74,7 @@ public class ChildBirthdayDialog extends Activity {
 			}
 		});
 
-		System.out.println("birthday--child---dialog-->" + getBirthday);
+		//System.out.println("birthday--child---dialog-->" + getBirthday);
 		if (getBirthday != null && getBirthday.length() > 0) {
 			String[] sGetBirthday = getBirthday.split("/");
 			dayOfMonth = Integer.parseInt(sGetBirthday[0]);
@@ -100,7 +100,7 @@ public class ChildBirthdayDialog extends Activity {
 						monthOfYear = monthOfYear + 1;
 						dateOfBirth = dayOfMonth + "/" + monthOfYear + "/"
 								+ year;
-						System.out.println("dateOfBirth==>" + dateOfBirth);
+						//System.out.println("dateOfBirth==>" + dateOfBirth);
 
 					}
 				});
@@ -108,7 +108,7 @@ public class ChildBirthdayDialog extends Activity {
 		if (!datePickerChangeFlag) {
 			monthOfYear = monthOfYear + 1;
 			dateOfBirth = dayOfMonth + "/" + monthOfYear + "/" + year;
-			System.out.println("dateOfBirth==>" + dateOfBirth);
+			//System.out.println("dateOfBirth==>" + dateOfBirth);
 		}
 
 	}
